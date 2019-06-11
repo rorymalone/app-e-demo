@@ -10,8 +10,10 @@ handlers:
   http_headers:
     X-Frame-Options: deny
     X-Content-Type-Options: nosniff
-    Strict-Transport-Security: max-age:31536000
+    Strict-Transport-Security: max-age=31536000
     Access-Control-Allow-Origin: "*"
+    X-Xss-Protection: "1; mode=block"
+    Referrer-Policy: strict-origin-when-cross-origin
 
 - url: /(.*)
   static_files: www/\1
@@ -21,5 +23,7 @@ handlers:
   http_headers:
     X-Frame-Options: deny
     X-Content-Type-Options: nosniff
-    Strict-Transport-Security: max-age:31536000
+    Strict-Transport-Security: max-age=31536000
     Access-Control-Allow-Origin: "*"
+    X-Xss-Protection: "1; mode=block"
+    Referrer-Policy: strict-origin-when-cross-origin
