@@ -6,7 +6,31 @@ handlers:
 - url: /
   static_files: www/index.html
   upload: www/index.html
+<<<<<<< Updated upstream
+=======
+  secure: always
+  redirect_http_response_code: 301
+  http_headers:
+    X-Frame-Options: deny
+    X-Content-Type-Options: nosniff
+    Strict-Transport-Security: max-age=31536000
+    Access-Control-Allow-Origin: "*"
+    X-Xss-Protection: "1; mode=block"
+    Referrer-Policy: strict-origin-when-cross-origin
+>>>>>>> Stashed changes
 
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+<<<<<<< Updated upstream
+=======
+  secure: always
+  redirect_http_response_code: 301
+  http_headers:
+    X-Frame-Options: deny
+    X-Content-Type-Options: nosniff
+    Strict-Transport-Security: max-age=31536000
+    Access-Control-Allow-Origin: "*"
+    X-Xss-Protection: "1; mode=block"
+    Referrer-Policy: strict-origin-when-cross-origin
+>>>>>>> Stashed changes
