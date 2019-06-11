@@ -11,7 +11,7 @@ handlers:
     X-Frame-Options: deny
     X-Content-Type-Options: nosniff
     Strict-Transport-Security: max-age:31536000
-    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Origin: "*"
 
 - url: /(.*)
   static_files: www/\1
@@ -22,4 +22,4 @@ handlers:
     X-Frame-Options: deny
     X-Content-Type-Options: nosniff
     Strict-Transport-Security: max-age:31536000
-    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Origin: "*"
